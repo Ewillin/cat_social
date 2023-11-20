@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fcd5ce;
+    }
+    
+    header {
+        background-color: #f770ca93;
+        color: #fff;
+        padding: 1em;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .main-content {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .post-form {
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: grid;
+        grid-gap: 15px;
+    }
+    
+    label {
+        font-weight: bold;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        background-color: #f770ca93;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #f770ca93;
+    }
+    
+    .posts {
+        display: grid;
+        grid-gap: 20px;
+    }
+    
+    .post {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .post img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .post-info {
+        padding: 15px;
+    }
+    
+    .interactions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .like,
+    .comment,
+    .feedback {
+        cursor: pointer;
+        color: #f770ca93;
+    }
+    
+    .comments {
+        margin-top: 10px;
+    }
+    
+    footer {
+        background-color: #f770ca93;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+     </style>
+    <title>Social Cat - Página Inicial</title>
+</head>
+<body>
+    <header>
+        <h1>Social Cat</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Amigos</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="post-form">
+            <h2>Postar Foto</h2>
+            <form action="#" method="post">
+                <label for="photo">Escolher Foto:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <label for="caption">Legenda:</label>
+                <textarea id="caption" name="caption" rows="3" required></textarea>
+
+                <button type="submit">Postar</button>
+            </form>
+        </div>
+
+        <div class="posts">
+            <!-- Exemplo de post -->
+            <div class="post">
+                <img src="cat.png" alt="Foto de um gato">
+                <div class="post-info">
+                    <p><strong>Nome do Usuário</strong></p>
+                    <p>Muchos Gatitos. #gato #fofo</p>
+                    <div class="interactions">
+                        <span class="like">Curtir</span>
+                        <span class="comment">Comentar</span>
+                        <span class="feedback">Feedback</span>
+                    </div>
+                    <div class="comments">
+                        <!-- Exemplo de comentário -->
+                        <p><strong>LouvadorDeGato06:</strong> Mucho Fofo Mesmo <3 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Social Cat. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
