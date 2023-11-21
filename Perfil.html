@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcd5ce;
+            color: #333;
+        }
+
+        header {
+            background-color: rgb(250, 162, 176);
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-profile {
+            text-align: center;
+        }
+
+        .user-profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .user-info {
+            margin-bottom: 20px;
+        }
+
+        .user-info p {
+            margin: 5px 0;
+        }
+
+        .user-activity {
+            text-align: center;
+        }
+
+        .user-activity p {
+            margin: 5px 0;
+        }
+
+        .user-activity button {
+            background-color: rgb(250, 162, 176);
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .user-activity button:hover {
+            background-color: rgb(250, 162, 176);
+        }
+    </style>
+    <title>Social Cat - Perfil</title>
+</head>
+<body>
+    <header>
+        <h1>Social Cat</h1>
+        <nav>
+            <ul>
+                <li><a href="Inicio.html">Início</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="Amigos.html">Amigos</a></li>
+                <li><a href="PaginaDeAjuda.html">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <div class="user-profile">
+            <img src="catwoman.jpg" alt="Perfil">
+            <h2>Nome do Usuário</h2>
+        </div>
+
+        <div class="user-info">
+            <p><strong>Email:</strong> usuario@socialcat.com</p>
+            <p><strong>Data de Nascimento:</strong> 01 de Janeiro de 2000</p>
+            <p><strong>Cidade:</strong> Socialópolis</p>
+        </div>
+
+        <div class="user-activity">
+            <h2>Atividade Recente</h2>
+            <p><strong>Posts:</strong> 50</p>
+            <p><strong>Amigos:</strong> 100</p>
+            <p><strong>Curtidas Recebidas:</strong> 200</p>
+            <button>Editar Perfil</button>
+        </div>
+    </section>
+</body>
+</html>
